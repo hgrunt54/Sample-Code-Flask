@@ -1,7 +1,5 @@
 h1 {
     text-align: center;
-}
-
-body
-{
+    border-bottom: double;
+    border-bottom-color: fuchsia;
 }
