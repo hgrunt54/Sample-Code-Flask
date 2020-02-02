@@ -17,18 +17,26 @@
     <div class="container">
     <h1>This Is Some Sample Code</h1>
     <form id="dropDowns" method="post">
-        <label for="bgroundSelect">Background Color</label>
-        <select id="bgroundSelect" name="background" class="form-control">
-            <option value="Red">Red</option>
-            <option value="Blue">Blue</option>
-            <option value="Green">Green</option>
-        </select>
-        <label for="fontSelect">Font Color</label>
-        <select id="fontSelect" name="font" class="form-control form-control-sm">
-            <option value="Red">Red</option>
-            <option value="Blue">Blue</option>
-            <option value="Green">Green</option>
-        </select>
+        <div class="form-row">
+            <label for="bgroundSelect">Background Color</label>
+            <div class="col-2">
+                <select id="bgroundSelect" name="background" class="form-control form-control-sm" method="GET" action="/">
+                    {% for bgcolor in bgColors %}
+                        <option value="{{bgcolor}}" selected>{{bgcolor}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="fontSelect">Font Color</label>
+            <div class="col-2">
+                <select id="fontSelect" name="font" class="form-control form-control-sm" method="GET" action="/">
+                    {% for fcolor in fColors %}
+                    <option value="{{fcolor}}" selected>{{fcolor}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
         <input type="submit" value="Submit" class="btn btn-primary btn-sm"/>
     </form>
     <div id="changeBody">

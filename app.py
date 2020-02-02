@@ -14,10 +14,12 @@ wsgi_app = app.wsgi_app
 def index():
     background = 'White'
     font = 'Black'
+    bgColors = ['Red', 'Blue', 'Green']
+    fColors = ['Yellow', 'Purple', 'Black']
     if request.method == 'POST':
         background = request.form['background']
         font = request.form['font']
-    return render_template('index.html', background=background, font=font)
+    return render_template('index.html', bgColors=bgColors, fColors=fColors, background=background, font=font)
 
 if __name__ == '__main__':
     import os
