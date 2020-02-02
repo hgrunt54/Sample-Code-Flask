@@ -4,31 +4,37 @@
 <head>
     <meta charset="utf-8" />
     <title>Sample Code</title>
-    <style></style>
-    <style></style>
-    This Is Some Sample Code
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="static/stylesheet1.css" /> 
+    <style>
+        #changeBody {
+            background-color: {{background}};
+            color: {{font}};
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+    <h1>This Is Some Sample Code</h1>
     <form id="dropDowns" method="post">
         <label for="bgroundSelect">Background Color</label>
-        <select id="bgroundSelect" name="background">
+        <select id="bgroundSelect" name="background" class="form-control">
             <option value="Red">Red</option>
             <option value="Blue">Blue</option>
             <option value="Green">Green</option>
         </select>
         <label for="fontSelect">Font Color</label>
-        <select id="fontSelect" name="font">
+        <select id="fontSelect" name="font" class="form-control form-control-sm">
             <option value="Red">Red</option>
             <option value="Blue">Blue</option>
             <option value="Green">Green</option>
         </select>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" class="btn btn-primary btn-sm"/>
     </form>
-    <div id="backgroundCol">
+    <div id="changeBody">
         The background color is {{background}}!
+        <p>The font color is {{font}}!</p>
     </div>
-    <div id="fontCol">
-        The font color is {{font}}!
     </div>
     <script></script>
 </body>
