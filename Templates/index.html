@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sample Code</title>
+    <style></style>
+    <style></style>
+    This Is Some Sample Code
+</head>
+<body>
+    <form id="dropDowns" method="post">
+        <label for="bgroundSelect">Background Color</label>
+        <select id="bgroundSelect" name="background">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+        </select>
+        <label for="fontSelect">Font Color</label>
+        <select id="fontSelect" name="font">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+        </select>
+        <input type="submit" value="Submit" />
+    </form>
+    <div id="backgroundCol">
+        The background color is {{background}}!
+    </div>
+    <div id="fontCol">
+        The font color is {{font}}!
+    </div>
+    <script></script>
+</body>
+</html>
