@@ -31,6 +31,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="Colors.db" />
     <Content Include="requirements.txt" />
     <Content Include="static\javaScript.js" />
     <Content Include="static\stylesheet1.css" />
